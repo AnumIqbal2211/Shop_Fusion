@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+form {
+  border: 3px solid #ccc;
+  padding: 60px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+input,
+select,
+button{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #8c54a4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ac84bc;
+}
+
+a {
+  color: #8c54a4;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.success-message {
+  color: green;
+}
+
+img{
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  margin-bottom: -70px;
+  margin-top: -40px;
+}
