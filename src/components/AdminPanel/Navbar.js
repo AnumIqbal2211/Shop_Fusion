@@ -17,7 +17,8 @@ import "./Navbar.css";
             placeholder="Search..."
             value={searchQuery}
             onChange={handleSearchChange}
-          />
+          />        
+                    
         </div>
         <div className="nav-elements">
           <ul>
