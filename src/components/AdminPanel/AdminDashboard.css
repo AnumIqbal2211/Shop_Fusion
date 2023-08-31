@@ -1,0 +1,9 @@
+.main-area {
+  position: fixed;
+  top: 75px;
+  left: 250px;
+  display: flex;
+}
+.main-area h1{
+  color: #321140;
+}

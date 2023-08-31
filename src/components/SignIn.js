@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../assets/images/logo_transparent.png";
+import logo from "./images/logo_transparent.png";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -17,7 +17,7 @@ const SignIn = () => {
   return (
     <div>
       <form className="signin-form" onSubmit={handleSubmit}>
-      <img src={logo} alt=""/>
+        <img src={logo} alt=""/>
         <h2>Sign In</h2>
         <input
           type="email"

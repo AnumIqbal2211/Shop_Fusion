@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo_transparent.png";
+import logo from "./images/logo_transparent.png";
 
 const SignUp = () => {
   const [name, setName] = useState("");
@@ -28,7 +28,7 @@ const SignUp = () => {
       <form className="signup-form" onSubmit={handleSubmit}>
         <img src={logo} alt="" />
         {successMessage && <p className="success-message">{successMessage}</p>}
-        <h2>Sign In</h2>
+        <h2>Sign Up</h2>
         <input
           type="name"
           placeholder="User Name"

@@ -2,8 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
-import AdminDashboard from "./components/AdminDashboard";
-import UserDashboard from "./components/UserDashboard";
+import AdminDashboard from "./components/AdminPanel/AdminDashboard";
 
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/admindashboard" element={<AdminDashboard />} />
-            <Route path="/userdashboard" element={<UserDashboard />} />
           </Routes>
         </div>
       </BrowserRouter>
