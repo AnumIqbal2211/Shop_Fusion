@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Sidebar.css";
+import "../AdminPanel/styles/Sidebar.css";
 import logo from "../images/logo_transparent.png";
 import { AiOutlineDashboard } from "react-icons/ai";
 import { FaUsers } from "react-icons/fa";
@@ -32,7 +32,7 @@ const Sidebar = () => (
           </Link>
         </li>
         <li>
-          <Link to="/calender">
+          <Link to="/catalog">
             <AiFillContainer />
             &nbsp; Catalog
           </Link>
