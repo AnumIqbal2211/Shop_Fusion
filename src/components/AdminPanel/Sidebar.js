@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../AdminPanel/styles/Sidebar.css";
-import logo from "../images/logo_transparent.png";
+import logo from "./images/logo_transparent.png";
 import { AiOutlineDashboard } from "react-icons/ai";
 import { FaUsers } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
@@ -9,15 +9,20 @@ import { AiFillContainer } from "react-icons/ai";
 import { BiCalendar } from "react-icons/bi";
 import { SiGoogleanalytics } from "react-icons/si";
 import { SlSettings } from "react-icons/sl";
-import { FaEnvelope } from "react-icons/fa";
+// import { FaEnvelope } from "react-icons/fa";
 import { AiFillFileAdd } from "react-icons/ai"; 
 import { AiFillProfile } from "react-icons/ai"; 
+
 
 const Sidebar = () => (
   <div>
     <div className="logo">
       <div>
-        <img src={logo} alt="" />
+        <Link
+          to="/admindashboard"
+        >
+          <img src={logo} alt="" />
+        </Link>
       </div>
     </div>
     <div className="sidebar">
@@ -32,9 +37,9 @@ const Sidebar = () => (
           </Link>
         </li>
         <li>
-          <Link to="/catalog">
+          <Link to="/products">
             <AiFillContainer />
-            &nbsp; Catalog
+            &nbsp; Products
           </Link>
         </li>
         <li>
@@ -49,12 +54,12 @@ const Sidebar = () => (
             &nbsp; Orders
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/inbox">
             <FaEnvelope />
             &nbsp; Inbox
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/filemanager">
             <AiFillFileAdd />

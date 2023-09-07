@@ -1,0 +1,22 @@
+.products-main-area{
+  position: fixed;
+  top: 91px;
+  left: 230px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #ECEFF4;
+}
+.products-main-area h2 {
+  color: #321140;
+}
+.products-main-area button{
+  height: 50px;
+  width: 100px;
+  margin-left: 1000px;
+  margin-top: 10px;
+}
+.products-main-area .products-list{
+  align-items: center;
+  background-color: #fff;
+}

@@ -41,7 +41,10 @@ function AdminDashboard() {
           </h4>
           <p>Compared to April 2022</p>
         </div>
-        <div className='active-users'></div>
+        <div className="active-users">
+          <h5>Active Users</h5>
+          <h1>578</h1>
+        </div>
       </div>
     </div>
   );

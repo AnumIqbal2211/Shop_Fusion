@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "./images/logo_transparent.png";
+import logo from "../components/AdminPanel/images/logo_transparent.png";
 
 const SignUp = () => {
   const [name, setName] = useState("");
@@ -34,24 +34,28 @@ const SignUp = () => {
           placeholder="User Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
         <input
           type="tel"
           placeholder="Phone No"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
+          required
         />
         <select value={gender} onChange={(e) => setGender(e.target.value)}>
           <option value="">Select Gender</option>
