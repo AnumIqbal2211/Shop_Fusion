@@ -18,8 +18,8 @@ body {
 
 
 .navbar {
-  position: relative; 
-  box-shadow: 5px 5px  rgb(223, 223, 223);
+  position: relative;
+  box-shadow: 5px 5px rgb(223, 223, 223);
 }
 
 .nav-elements ul {
@@ -54,4 +54,38 @@ body {
   margin-top: 25px;
   margin-right: 20px;
   background-color: #f3f3f3;
+}
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  .search-bar input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .nav-elements ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .nav-elements ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-elements ul a {
+    margin-right: 0;
+  }
 }

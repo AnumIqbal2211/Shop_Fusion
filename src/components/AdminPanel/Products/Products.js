@@ -3,12 +3,13 @@ import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
 import "../styles/Products.css";
 import { useNavigate } from "react-router-dom";
+import ProductsDataTable from './ProductsDataTable';
 
 function Products() {
 
   const navigate = useNavigate();
 
-  const handleLogout = () => {
+  const addProduct = () => {
     navigate("/addnewproduct");
   };
   return (
@@ -18,9 +19,11 @@ function Products() {
         <Sidebar />
       </div>
       <div className="products-main-area">
-        <h2>&nbsp; Products</h2>
-        <button onClick={handleLogout}>New Product</button>
-        <div className="products-list"></div>
+        <h2>&nbsp;&nbsp; Products</h2>
+        <button onClick={addProduct}>Add New Product</button>
+        <div className="products-list">
+          <ProductsDataTable />
+        </div>
       </div>
     </div>
   );

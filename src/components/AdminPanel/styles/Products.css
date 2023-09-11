@@ -1,22 +1,116 @@
-.products-main-area{
+.products-main-area {
   position: fixed;
   top: 91px;
   left: 230px;
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   background-color: #ECEFF4;
 }
+
 .products-main-area h2 {
   color: #321140;
+  text-align: left;
 }
-.products-main-area button{
+
+.products-main-area button {
+  position: fixed;
   height: 50px;
-  width: 100px;
-  margin-left: 1000px;
-  margin-top: 10px;
+  width: 130px;
+  margin-left: 1150px;
+  margin-right: auto;
+  margin-top: 20px;
 }
-.products-main-area .products-list{
+
+.products-main-area .products-list {
+  flex-grow: 1;
   align-items: center;
   background-color: #fff;
+  overflow-x: auto;
+}
+
+/* styles for DATA TABLE in PRODUCTS */
+.products .products-main-area .products-list {
+  align-items: center;
+  position: fixed;
+  margin-top: 80px;
+  height: 80%;
+  width: 80%;
+  margin-left: 40px;
+  box-shadow: 5px 5px 5px 5px #dddcdc;
+}
+/* DataTable */
+.data-table .search-product{
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 1000px;
+}
+
+@media (max-width: 768px) {
+  .products-main-area,
+  .products .products-main-area .products-list {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .products .products-main-area .products-list {
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: none;
+  }
+  .products .products-main-area .products-list {
+    margin-top: 20px;
+    box-shadow: none;
+  }
+}
+
+/* styles for ADD NEW PRODUCTS */
+.products .new-product-list {
+  position: fixed;
+  top: 91px;
+  left: 230px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #ECEFF4;
+}
+
+.products .new-product-list h2 {
+  color: #321140;
+  text-align: left;
+}
+
+.products .new-product-list .new-products {
+  position: fixed;
+  margin-top: 80px;
+  height: 70%;
+  width: 80%;
+  margin-left: 40px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 5px #dddcdc;
+}
+.products .new-product-list .new-products h3{
+  text-align: center;
+}
+
+.products .new-product-list .new-products h5{
+  text-align: left;
+  margin-left: 50px;
+}
+
+.products .new-product-list input {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.products .new-product-list button{
+  /* position: fixed; */
+  height: 50px;
+  width: 80px;
+  margin-left: 90%;
+  margin-top: 20px;
+  /* margin-right: auto; */
 }

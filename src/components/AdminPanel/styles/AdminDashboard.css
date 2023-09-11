@@ -3,15 +3,17 @@
   top: 91px;
   left: 230px;
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: #ECEFF4;
 }
-.main-area h1{
-  color: #321140; 
+
+.main-area h1 {
+  color: #321140;
 }
+
 /* Styles for TOTAL SELLS */
-.main-area .total-sells{
+.main-area .total-sells {
   background-color: #fff;
   color: black;
   height: 200px;
@@ -19,27 +21,30 @@
   margin-top: 80px;
   margin-left: -70px;
   box-shadow: 5px 5px 5px rgb(223, 223, 223);
-  
+
 }
-.main-area .total-sells h5{
+
+.main-area .total-sells h5 {
   color: rgb(150, 148, 148);
   text-align: left;
   margin-left: 15px;
 }
 
-.main-area .total-sells h1{
+.main-area .total-sells h1 {
   text-align: center;
 }
-.main-area .total-sells h4{
+
+.main-area .total-sells h4 {
   text-align: center;
   color: green;
 }
-.main-area .total-sells p{
+
+.main-area .total-sells p {
   color: rgb(150, 148, 148);
 }
 
 /* Styles for AVERAGE ORDER VALUE */
-.main-area .average-order-value{
+.main-area .average-order-value {
   background-color: #fff;
   color: black;
   height: 200px;
@@ -98,7 +103,7 @@
 
 .main-area .total-orders p {
   color: rgb(150, 148, 148);
-} 
+}
 
 /* Style for ACTIVE USERS */
 .main-area .active-users {
@@ -110,6 +115,7 @@
   margin-left: -980px;
   box-shadow: 5px 5px 5px rgb(223, 223, 223);
 }
+
 .main-area .active-users h5 {
   color: rgb(150, 148, 148);
   text-align: left;
@@ -121,4 +127,24 @@
   background-color: #937a9d;
   margin-left: 40px;
   margin-right: 40px;
+}
+/* Media query for larger screens (e.g., desktop) */
+@media (min-width: 768px) {
+  .main-area {
+    top: 91px;
+    left: 230px;
+  }
+}
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 767px) {
+  .main-area {
+    top: 0;
+    left: 0;
+  }
+
+  .main-area .card {
+    width: 90%;
+    margin: 20px auto;
+  }
 }
